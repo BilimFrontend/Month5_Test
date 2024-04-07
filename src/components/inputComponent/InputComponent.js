@@ -1,11 +1,10 @@
 import React from 'react';
+import classes from "./InputComponent.module.css";
 
-const Input = () => {
+const InputComponent = ({placeholder, name, type, onChange}) => {
     return (
-        <input>
-
-        </input>
+        <input className={classes.input} type={type} name={name} placeholder={placeholder} onChange={onChange}/>
     );
 };
 
-export default Input;
+export default InputComponent;
